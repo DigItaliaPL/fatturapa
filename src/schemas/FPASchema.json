@@ -1,0 +1,362 @@
+{
+  "title": "FatturaElettronica",
+  "$schema": "http://json-schema.org/draft-04/schema",
+  "required": ["@", "FatturaElettronicaHeader", "FatturaElettronicaBody"],
+  "properties": {
+    "@": {
+      "type": "object",
+      "required": ["version"],
+      "properties": {
+        "version": {
+          "enum": ["FPA12", "FPR12"],
+          "description": "Versione della fattura. Valori accettati FPA12 e FPR12"
+        }
+      }
+    },
+    "FatturaElettronicaHeader": {
+      "type": "object",
+      "required": ["DatiTrasmissione", "CedentePrestatore", "CessionarioCommittente"],
+      "properties": {
+        "DatiTrasmissione": {
+          "type": "object",
+          "required": [
+            "IdTrasmittente",
+            "ProgressivoInvio",
+            "FormatoTrasmissione",
+            "CodiceDestinatario"
+          ],
+          "properties": {
+            "IdTrasmittente": {
+              "type": "object",
+              "required": ["IdPaese", "IdCodice"],
+              "properties": {
+                "IdPaese": {
+                  "enum": [
+                    "AD",
+                    "BL",
+                    "BM",
+                    "BN",
+                    "BO",
+                    "BQ",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BV",
+                    "BW",
+                    "BY",
+                    "BZ",
+                    "CA",
+                    "CC",
+                    "CD",
+                    "CF",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CK",
+                    "CL",
+                    "CM",
+                    "CN",
+                    "CO",
+                    "CR",
+                    "CU",
+                    "CV",
+                    "CW",
+                    "CX",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "EH",
+                    "ER",
+                    "ES",
+                    "ET",
+                    "FI",
+                    "FJ",
+                    "FK",
+                    "FM",
+                    "FO",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GF",
+                    "GG",
+                    "GH",
+                    "GI",
+                    "GL",
+                    "GM",
+                    "GN",
+                    "GP",
+                    "GQ",
+                    "GR",
+                    "GS",
+                    "GT",
+                    "GU",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HM",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IM",
+                    "IN",
+                    "IO",
+                    "IQ",
+                    "IR",
+                    "IS",
+                    "IT",
+                    "JE",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KP",
+                    "KR",
+                    "KW",
+                    "KY",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MF",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MM",
+                    "MN",
+                    "MO",
+                    "MP",
+                    "MQ",
+                    "MR",
+                    "MS",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NC",
+                    "NE",
+                    "NF",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NU",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PF",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PM",
+                    "PN",
+                    "PR",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RE",
+                    "RO",
+                    "RS",
+                    "RU",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SD",
+                    "SE",
+                    "SG",
+                    "SH",
+                    "SI",
+                    "SJ",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SO",
+                    "SR",
+                    "SS",
+                    "ST",
+                    "SV",
+                    "SX",
+                    "SY",
+                    "SZ",
+                    "TC",
+                    "TD",
+                    "TF",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TK",
+                    "TL",
+                    "TM",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "UM",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VA",
+                    "VC",
+                    "VE",
+                    "VG",
+                    "VI",
+                    "VN",
+                    "VU",
+                    "WF",
+                    "WS",
+                    "YE",
+                    "YT",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                  ],
+                  "description": "Codice della nazione espresso secondo lo standard ISO 3166-1 alpha-2 code"
+                },
+                "IdCodice": {
+                  "type": "string",
+                  "minimum": 1,
+                  "maximum": 28
+                }
+              }
+            },
+            "ProgressivoInvio": {
+              "type": "string",
+              "minimum": 1,
+              "maximum": 10
+            },
+            "FormatoTrasmissione": {
+              "enum": ["FPA12", "FPR12"],
+              "description": "Formato della fattura trasmessa. Valori ammessi : FPA12, FPR12"
+            },
+            "CodiceDestinatario": {
+              "type": "string",
+              "minimum": 6,
+              "maximum": 7
+            },
+            "ContattiTrasmittente": {
+              "type": "object",
+              "properties": {
+                "Telefono": {
+                  "type": "string",
+                  "minimum": 5,
+                  "maximum": 12
+                },
+                "Email": {
+                  "type": "string",
+                  "minimum": 5,
+                  "maximum": 256
+                }
+              }
+            },
+            "PECDestinatario": {
+              "type": "string",
+              "minimum": 7,
+              "maximum": 256
+            }
+          }
+        },
+        "CedentePrestatore": {
+          "type": "object",
+          "required": ["DatiAnagrafici", "Sede"],
+          "properties": {
+            "DatiAnagrafici": {
+              "type": "object",
+              "required": ["IdFiscaleIVA", "Anagrafica", "RegimeFiscale"],
+              "properties": {
+                "IdFiscaleIVA": {
+                  "type": "object",
+                  "properties": {
+                    "IdPaese": {}
+                  },
+                  "required": ["IdPaese", "IdCodice"]
+                }
+              }
+            }
+          }
+        },
+        "RappresentanteFiscale": {
+          "type": "object",
+          "required": [
+            "IdTrasmittente",
+            "ProgressivoInvio",
+            "FormatoTrasmissione",
+            "CodiceDestinatario"
+          ],
+          "properties": {}
+        },
+        "CessionarioCommittente": {
+          "type": "object",
+          "required": [
+            "IdTrasmittente",
+            "ProgressivoInvio",
+            "FormatoTrasmissione",
+            "CodiceDestinatario"
+          ],
+          "properties": {}
+        },
+        "TerzoIntermediarioOSoggettoEmittente": {
+          "type": "object",
+          "required": [
+            "IdTrasmittente",
+            "ProgressivoInvio",
+            "FormatoTrasmissione",
+            "CodiceDestinatario"
+          ],
+          "properties": {}
+        },
+        "SoggettoEmittente": {
+          "enum": ["CC", "TZ"],
+          "description": "Valori ammissibili : 'CC', 'TZ'"
+        }
+      }
+    }
+  }
+}

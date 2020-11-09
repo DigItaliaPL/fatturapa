@@ -1,0 +1,7 @@
+*.log
+.DS_Store
+node_modules
+dist
+coverage
+test/data/parsedJson/*.json
+test/data/parsedXml/*.xml

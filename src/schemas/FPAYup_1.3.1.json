@@ -1,0 +1,5306 @@
+{
+  "type": "object",
+  "tests": [],
+  "fields": {
+    "@": {
+      "type": "object",
+      "tests": [],
+      "fields": {
+        "versione": {
+          "type": "string",
+          "tests": [],
+          "oneOf": ["FPA12", "FPR12"]
+        }
+      }
+    },
+    "FatturaElettronicaHeader": {
+      "type": "object",
+      "tests": [
+        {
+          "name": "required"
+        }
+      ],
+      "fields": {
+        "DatiTrasmissione": {
+          "type": "object",
+          "tests": [
+            {
+              "name": "required"
+            }
+          ],
+          "fields": {
+            "IdTrasmittente": {
+              "type": "object",
+              "tests": [
+                {
+                  "name": "required"
+                }
+              ],
+              "fields": {
+                "IdPaese": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "required"
+                    }
+                  ],
+                  "oneOf": [
+                    "AD",
+                    "AE",
+                    "AF",
+                    "AG",
+                    "AI",
+                    "AL",
+                    "AM",
+                    "AO",
+                    "AQ",
+                    "AR",
+                    "AS",
+                    "AT",
+                    "AU",
+                    "AW",
+                    "AX",
+                    "AZ",
+                    "BA",
+                    "BB",
+                    "BD",
+                    "BE",
+                    "BF",
+                    "BG",
+                    "BH",
+                    "BI",
+                    "BJ",
+                    "BL",
+                    "BM",
+                    "BN",
+                    "BO",
+                    "BQ",
+                    "BR",
+                    "BS",
+                    "BT",
+                    "BV",
+                    "BW",
+                    "BY",
+                    "BZ",
+                    "CA",
+                    "CC",
+                    "CD",
+                    "CF",
+                    "CG",
+                    "CH",
+                    "CI",
+                    "CK",
+                    "CL",
+                    "CM",
+                    "CN",
+                    "CO",
+                    "CR",
+                    "CU",
+                    "CV",
+                    "CW",
+                    "CX",
+                    "CY",
+                    "CZ",
+                    "DE",
+                    "DJ",
+                    "DK",
+                    "DM",
+                    "DO",
+                    "DZ",
+                    "EC",
+                    "EE",
+                    "EG",
+                    "EH",
+                    "ER",
+                    "ES",
+                    "ET",
+                    "FI",
+                    "FJ",
+                    "FK",
+                    "FM",
+                    "FO",
+                    "FR",
+                    "GA",
+                    "GB",
+                    "GD",
+                    "GE",
+                    "GF",
+                    "GG",
+                    "GH",
+                    "GI",
+                    "GL",
+                    "GM",
+                    "GN",
+                    "GP",
+                    "GQ",
+                    "GR",
+                    "GS",
+                    "GT",
+                    "GU",
+                    "GW",
+                    "GY",
+                    "HK",
+                    "HM",
+                    "HN",
+                    "HR",
+                    "HT",
+                    "HU",
+                    "ID",
+                    "IE",
+                    "IL",
+                    "IM",
+                    "IN",
+                    "IO",
+                    "IQ",
+                    "IR",
+                    "IS",
+                    "IT",
+                    "JE",
+                    "JM",
+                    "JO",
+                    "JP",
+                    "KE",
+                    "KG",
+                    "KH",
+                    "KI",
+                    "KM",
+                    "KN",
+                    "KP",
+                    "KR",
+                    "KW",
+                    "KY",
+                    "KZ",
+                    "LA",
+                    "LB",
+                    "LC",
+                    "LI",
+                    "LK",
+                    "LR",
+                    "LS",
+                    "LT",
+                    "LU",
+                    "LV",
+                    "LY",
+                    "MA",
+                    "MC",
+                    "MD",
+                    "ME",
+                    "MF",
+                    "MG",
+                    "MH",
+                    "MK",
+                    "ML",
+                    "MM",
+                    "MN",
+                    "MO",
+                    "MP",
+                    "MQ",
+                    "MR",
+                    "MS",
+                    "MT",
+                    "MU",
+                    "MV",
+                    "MW",
+                    "MX",
+                    "MY",
+                    "MZ",
+                    "NA",
+                    "NC",
+                    "NE",
+                    "NF",
+                    "NG",
+                    "NI",
+                    "NL",
+                    "NO",
+                    "NP",
+                    "NR",
+                    "NU",
+                    "NZ",
+                    "OM",
+                    "PA",
+                    "PE",
+                    "PF",
+                    "PG",
+                    "PH",
+                    "PK",
+                    "PL",
+                    "PM",
+                    "PN",
+                    "PR",
+                    "PS",
+                    "PT",
+                    "PW",
+                    "PY",
+                    "QA",
+                    "RE",
+                    "RO",
+                    "RS",
+                    "RU",
+                    "RW",
+                    "SA",
+                    "SB",
+                    "SC",
+                    "SD",
+                    "SE",
+                    "SG",
+                    "SH",
+                    "SI",
+                    "SJ",
+                    "SK",
+                    "SL",
+                    "SM",
+                    "SN",
+                    "SO",
+                    "SR",
+                    "SS",
+                    "ST",
+                    "SV",
+                    "SX",
+                    "SY",
+                    "SZ",
+                    "TC",
+                    "TD",
+                    "TF",
+                    "TG",
+                    "TH",
+                    "TJ",
+                    "TK",
+                    "TL",
+                    "TM",
+                    "TN",
+                    "TO",
+                    "TR",
+                    "TT",
+                    "TV",
+                    "TW",
+                    "TZ",
+                    "UA",
+                    "UG",
+                    "UM",
+                    "US",
+                    "UY",
+                    "UZ",
+                    "VA",
+                    "VC",
+                    "VE",
+                    "VG",
+                    "VI",
+                    "VN",
+                    "VU",
+                    "WF",
+                    "WS",
+                    "YE",
+                    "YT",
+                    "ZA",
+                    "ZM",
+                    "ZW"
+                  ]
+                },
+                "IdCodice": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "required"
+                    },
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 2
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 28
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "ProgressivoInvio": {
+              "type": "string",
+              "tests": [
+                {
+                  "name": "required"
+                },
+                {
+                  "name": "min",
+                  "params": {
+                    "min": 1
+                  }
+                },
+                {
+                  "name": "max",
+                  "params": {
+                    "max": 10
+                  }
+                }
+              ]
+            },
+            "FormatoTrasmissione": {
+              "type": "string",
+              "tests": [
+                {
+                  "name": "required"
+                }
+              ],
+              "oneOf": ["FPA12", "FPR12"]
+            },
+            "CodiceDestinatario": {
+              "type": "string",
+              "tests": [
+                {
+                  "name": "required"
+                }
+              ]
+            },
+            "ContattiTrasmittente": {
+              "type": "object",
+              "tests": [],
+              "fields": {
+                "Telefono": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 5
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 12
+                      }
+                    }
+                  ]
+                },
+                "Email": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "email",
+                      "params": {
+                        "regex": {}
+                      }
+                    },
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 7
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 256
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "PECDestinatario": {
+              "type": "string",
+              "tests": []
+            }
+          }
+        },
+        "CedentePrestatore": {
+          "type": "object",
+          "tests": [
+            {
+              "name": "required"
+            }
+          ],
+          "fields": {
+            "DatiAnagrafici": {
+              "type": "object",
+              "tests": [
+                {
+                  "name": "required"
+                }
+              ],
+              "fields": {
+                "IdFiscaleIVA": {
+                  "type": "object",
+                  "tests": [
+                    {
+                      "name": "required"
+                    }
+                  ],
+                  "fields": {
+                    "IdPaese": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "required"
+                        }
+                      ],
+                      "oneOf": [
+                        "AD",
+                        "AE",
+                        "AF",
+                        "AG",
+                        "AI",
+                        "AL",
+                        "AM",
+                        "AO",
+                        "AQ",
+                        "AR",
+                        "AS",
+                        "AT",
+                        "AU",
+                        "AW",
+                        "AX",
+                        "AZ",
+                        "BA",
+                        "BB",
+                        "BD",
+                        "BE",
+                        "BF",
+                        "BG",
+                        "BH",
+                        "BI",
+                        "BJ",
+                        "BL",
+                        "BM",
+                        "BN",
+                        "BO",
+                        "BQ",
+                        "BR",
+                        "BS",
+                        "BT",
+                        "BV",
+                        "BW",
+                        "BY",
+                        "BZ",
+                        "CA",
+                        "CC",
+                        "CD",
+                        "CF",
+                        "CG",
+                        "CH",
+                        "CI",
+                        "CK",
+                        "CL",
+                        "CM",
+                        "CN",
+                        "CO",
+                        "CR",
+                        "CU",
+                        "CV",
+                        "CW",
+                        "CX",
+                        "CY",
+                        "CZ",
+                        "DE",
+                        "DJ",
+                        "DK",
+                        "DM",
+                        "DO",
+                        "DZ",
+                        "EC",
+                        "EE",
+                        "EG",
+                        "EH",
+                        "ER",
+                        "ES",
+                        "ET",
+                        "FI",
+                        "FJ",
+                        "FK",
+                        "FM",
+                        "FO",
+                        "FR",
+                        "GA",
+                        "GB",
+                        "GD",
+                        "GE",
+                        "GF",
+                        "GG",
+                        "GH",
+                        "GI",
+                        "GL",
+                        "GM",
+                        "GN",
+                        "GP",
+                        "GQ",
+                        "GR",
+                        "GS",
+                        "GT",
+                        "GU",
+                        "GW",
+                        "GY",
+                        "HK",
+                        "HM",
+                        "HN",
+                        "HR",
+                        "HT",
+                        "HU",
+                        "ID",
+                        "IE",
+                        "IL",
+                        "IM",
+                        "IN",
+                        "IO",
+                        "IQ",
+                        "IR",
+                        "IS",
+                        "IT",
+                        "JE",
+                        "JM",
+                        "JO",
+                        "JP",
+                        "KE",
+                        "KG",
+                        "KH",
+                        "KI",
+                        "KM",
+                        "KN",
+                        "KP",
+                        "KR",
+                        "KW",
+                        "KY",
+                        "KZ",
+                        "LA",
+                        "LB",
+                        "LC",
+                        "LI",
+                        "LK",
+                        "LR",
+                        "LS",
+                        "LT",
+                        "LU",
+                        "LV",
+                        "LY",
+                        "MA",
+                        "MC",
+                        "MD",
+                        "ME",
+                        "MF",
+                        "MG",
+                        "MH",
+                        "MK",
+                        "ML",
+                        "MM",
+                        "MN",
+                        "MO",
+                        "MP",
+                        "MQ",
+                        "MR",
+                        "MS",
+                        "MT",
+                        "MU",
+                        "MV",
+                        "MW",
+                        "MX",
+                        "MY",
+                        "MZ",
+                        "NA",
+                        "NC",
+                        "NE",
+                        "NF",
+                        "NG",
+                        "NI",
+                        "NL",
+                        "NO",
+                        "NP",
+                        "NR",
+                        "NU",
+                        "NZ",
+                        "OM",
+                        "PA",
+                        "PE",
+                        "PF",
+                        "PG",
+                        "PH",
+                        "PK",
+                        "PL",
+                        "PM",
+                        "PN",
+                        "PR",
+                        "PS",
+                        "PT",
+                        "PW",
+                        "PY",
+                        "QA",
+                        "RE",
+                        "RO",
+                        "RS",
+                        "RU",
+                        "RW",
+                        "SA",
+                        "SB",
+                        "SC",
+                        "SD",
+                        "SE",
+                        "SG",
+                        "SH",
+                        "SI",
+                        "SJ",
+                        "SK",
+                        "SL",
+                        "SM",
+                        "SN",
+                        "SO",
+                        "SR",
+                        "SS",
+                        "ST",
+                        "SV",
+                        "SX",
+                        "SY",
+                        "SZ",
+                        "TC",
+                        "TD",
+                        "TF",
+                        "TG",
+                        "TH",
+                        "TJ",
+                        "TK",
+                        "TL",
+                        "TM",
+                        "TN",
+                        "TO",
+                        "TR",
+                        "TT",
+                        "TV",
+                        "TW",
+                        "TZ",
+                        "UA",
+                        "UG",
+                        "UM",
+                        "US",
+                        "UY",
+                        "UZ",
+                        "VA",
+                        "VC",
+                        "VE",
+                        "VG",
+                        "VI",
+                        "VN",
+                        "VU",
+                        "WF",
+                        "WS",
+                        "YE",
+                        "YT",
+                        "ZA",
+                        "ZM",
+                        "ZW"
+                      ]
+                    },
+                    "IdCodice": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 2
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 28
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    }
+                  }
+                },
+                "CodiceFiscale": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "matches",
+                      "params": {
+                        "regex": {}
+                      }
+                    }
+                  ]
+                },
+                "Anagrafica": {
+                  "type": "object",
+                  "tests": [
+                    {
+                      "name": "required"
+                    }
+                  ],
+                  "fields": {
+                    "Denominazione": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 80
+                          }
+                        }
+                      ]
+                    },
+                    "Nome": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 60
+                          }
+                        }
+                      ]
+                    },
+                    "Cognome": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 60
+                          }
+                        }
+                      ]
+                    },
+                    "Titolo": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 2
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 10
+                          }
+                        }
+                      ]
+                    },
+                    "CodEORI": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 13
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 17
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                "AlboProfessionale": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 1
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 60
+                      }
+                    }
+                  ]
+                },
+                "ProvinciaAlbo": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "length",
+                      "params": {
+                        "length": 2
+                      }
+                    }
+                  ]
+                },
+                "NumeroIscrizioneAlbo": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 1
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 60
+                      }
+                    }
+                  ]
+                },
+                "DataIscrizioneAlbo": {
+                  "type": "date",
+                  "tests": []
+                },
+                "RegimeFiscale": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "required"
+                    }
+                  ],
+                  "oneOf": [
+                    "RF01",
+                    "RF02",
+                    "RF04",
+                    "RF05",
+                    "RF06",
+                    "RF07",
+                    "RF08",
+                    "RF09",
+                    "RF10",
+                    "RF11",
+                    "RF12",
+                    "RF13",
+                    "RF14",
+                    "RF15",
+                    "RF16",
+                    "RF17",
+                    "RF18",
+                    "RF19"
+                  ]
+                }
+              }
+            },
+            "Sede": {
+              "type": "object",
+              "tests": [
+                {
+                  "name": "required"
+                }
+              ],
+              "fields": {
+                "Indirizzo": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 1
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 60
+                      }
+                    },
+                    {
+                      "name": "required"
+                    }
+                  ]
+                },
+                "NumeroCivico": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 1
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 8
+                      }
+                    }
+                  ]
+                },
+                "CAP": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "matches",
+                      "params": {
+                        "regex": {}
+                      }
+                    },
+                    {
+                      "name": "required"
+                    }
+                  ]
+                },
+                "Comune": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 1
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 60
+                      }
+                    },
+                    {
+                      "name": "required"
+                    }
+                  ]
+                },
+                "Provincia": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "string_case"
+                    },
+                    {
+                      "name": "length",
+                      "params": {
+                        "length": 2
+                      }
+                    }
+                  ]
+                },
+                "Nazione": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "string_case"
+                    },
+                    {
+                      "name": "length",
+                      "params": {
+                        "length": 2
+                      }
+                    },
+                    {
+                      "name": "required"
+                    }
+                  ]
+                }
+              }
+            },
+            "StabileOrganizzazione": {
+              "type": "object",
+              "tests": [],
+              "fields": {}
+            },
+            "IscrizioneREA": {
+              "type": "object",
+              "tests": [],
+              "fields": {
+                "Ufficio": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "string_case"
+                    },
+                    {
+                      "name": "length",
+                      "params": {
+                        "length": 2
+                      }
+                    },
+                    {
+                      "name": "required"
+                    }
+                  ]
+                },
+                "NumeroREA": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 1
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 20
+                      }
+                    },
+                    {
+                      "name": "required"
+                    }
+                  ]
+                },
+                "CapitaleSociale": {
+                  "type": "number",
+                  "tests": [
+                    {
+                      "name": "min",
+                      "params": {
+                        "more": 0
+                      }
+                    }
+                  ]
+                },
+                "SocioUnico": {
+                  "type": "string",
+                  "tests": [],
+                  "oneOf": ["SU", "SM"]
+                },
+                "StatoLiquidazione": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "required"
+                    }
+                  ],
+                  "oneOf": ["LS", "LN"]
+                }
+              }
+            },
+            "Contatti": {
+              "type": "object",
+              "tests": [],
+              "fields": {
+                "Telefono": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 5
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 12
+                      }
+                    }
+                  ]
+                },
+                "Fax": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 5
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 12
+                      }
+                    }
+                  ]
+                },
+                "Email": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "email",
+                      "params": {
+                        "regex": {}
+                      }
+                    },
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 7
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 256
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            "RiferimentoAmministrazione": {
+              "type": "string",
+              "tests": [
+                {
+                  "name": "min",
+                  "params": {
+                    "min": 1
+                  }
+                },
+                {
+                  "name": "max",
+                  "params": {
+                    "max": 20
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "RappresentanteFiscale": {
+          "type": "object",
+          "tests": [],
+          "fields": {
+            "DatiAnagrafici": {
+              "type": "object",
+              "tests": [],
+              "fields": {
+                "IdFiscaleIVA": {
+                  "type": "object",
+                  "tests": [
+                    {
+                      "name": "required"
+                    }
+                  ],
+                  "fields": {
+                    "IdPaese": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "required"
+                        }
+                      ],
+                      "oneOf": [
+                        "AD",
+                        "AE",
+                        "AF",
+                        "AG",
+                        "AI",
+                        "AL",
+                        "AM",
+                        "AO",
+                        "AQ",
+                        "AR",
+                        "AS",
+                        "AT",
+                        "AU",
+                        "AW",
+                        "AX",
+                        "AZ",
+                        "BA",
+                        "BB",
+                        "BD",
+                        "BE",
+                        "BF",
+                        "BG",
+                        "BH",
+                        "BI",
+                        "BJ",
+                        "BL",
+                        "BM",
+                        "BN",
+                        "BO",
+                        "BQ",
+                        "BR",
+                        "BS",
+                        "BT",
+                        "BV",
+                        "BW",
+                        "BY",
+                        "BZ",
+                        "CA",
+                        "CC",
+                        "CD",
+                        "CF",
+                        "CG",
+                        "CH",
+                        "CI",
+                        "CK",
+                        "CL",
+                        "CM",
+                        "CN",
+                        "CO",
+                        "CR",
+                        "CU",
+                        "CV",
+                        "CW",
+                        "CX",
+                        "CY",
+                        "CZ",
+                        "DE",
+                        "DJ",
+                        "DK",
+                        "DM",
+                        "DO",
+                        "DZ",
+                        "EC",
+                        "EE",
+                        "EG",
+                        "EH",
+                        "ER",
+                        "ES",
+                        "ET",
+                        "FI",
+                        "FJ",
+                        "FK",
+                        "FM",
+                        "FO",
+                        "FR",
+                        "GA",
+                        "GB",
+                        "GD",
+                        "GE",
+                        "GF",
+                        "GG",
+                        "GH",
+                        "GI",
+                        "GL",
+                        "GM",
+                        "GN",
+                        "GP",
+                        "GQ",
+                        "GR",
+                        "GS",
+                        "GT",
+                        "GU",
+                        "GW",
+                        "GY",
+                        "HK",
+                        "HM",
+                        "HN",
+                        "HR",
+                        "HT",
+                        "HU",
+                        "ID",
+                        "IE",
+                        "IL",
+                        "IM",
+                        "IN",
+                        "IO",
+                        "IQ",
+                        "IR",
+                        "IS",
+                        "IT",
+                        "JE",
+                        "JM",
+                        "JO",
+                        "JP",
+                        "KE",
+                        "KG",
+                        "KH",
+                        "KI",
+                        "KM",
+                        "KN",
+                        "KP",
+                        "KR",
+                        "KW",
+                        "KY",
+                        "KZ",
+                        "LA",
+                        "LB",
+                        "LC",
+                        "LI",
+                        "LK",
+                        "LR",
+                        "LS",
+                        "LT",
+                        "LU",
+                        "LV",
+                        "LY",
+                        "MA",
+                        "MC",
+                        "MD",
+                        "ME",
+                        "MF",
+                        "MG",
+                        "MH",
+                        "MK",
+                        "ML",
+                        "MM",
+                        "MN",
+                        "MO",
+                        "MP",
+                        "MQ",
+                        "MR",
+                        "MS",
+                        "MT",
+                        "MU",
+                        "MV",
+                        "MW",
+                        "MX",
+                        "MY",
+                        "MZ",
+                        "NA",
+                        "NC",
+                        "NE",
+                        "NF",
+                        "NG",
+                        "NI",
+                        "NL",
+                        "NO",
+                        "NP",
+                        "NR",
+                        "NU",
+                        "NZ",
+                        "OM",
+                        "PA",
+                        "PE",
+                        "PF",
+                        "PG",
+                        "PH",
+                        "PK",
+                        "PL",
+                        "PM",
+                        "PN",
+                        "PR",
+                        "PS",
+                        "PT",
+                        "PW",
+                        "PY",
+                        "QA",
+                        "RE",
+                        "RO",
+                        "RS",
+                        "RU",
+                        "RW",
+                        "SA",
+                        "SB",
+                        "SC",
+                        "SD",
+                        "SE",
+                        "SG",
+                        "SH",
+                        "SI",
+                        "SJ",
+                        "SK",
+                        "SL",
+                        "SM",
+                        "SN",
+                        "SO",
+                        "SR",
+                        "SS",
+                        "ST",
+                        "SV",
+                        "SX",
+                        "SY",
+                        "SZ",
+                        "TC",
+                        "TD",
+                        "TF",
+                        "TG",
+                        "TH",
+                        "TJ",
+                        "TK",
+                        "TL",
+                        "TM",
+                        "TN",
+                        "TO",
+                        "TR",
+                        "TT",
+                        "TV",
+                        "TW",
+                        "TZ",
+                        "UA",
+                        "UG",
+                        "UM",
+                        "US",
+                        "UY",
+                        "UZ",
+                        "VA",
+                        "VC",
+                        "VE",
+                        "VG",
+                        "VI",
+                        "VN",
+                        "VU",
+                        "WF",
+                        "WS",
+                        "YE",
+                        "YT",
+                        "ZA",
+                        "ZM",
+                        "ZW"
+                      ]
+                    },
+                    "IdCodice": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 2
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 28
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    }
+                  }
+                },
+                "CodiceFiscale": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "matches",
+                      "params": {
+                        "regex": {}
+                      }
+                    }
+                  ]
+                },
+                "Anagrafica": {
+                  "type": "object",
+                  "tests": [
+                    {
+                      "name": "required"
+                    }
+                  ],
+                  "fields": {
+                    "Denominazione": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 80
+                          }
+                        }
+                      ]
+                    },
+                    "Nome": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 60
+                          }
+                        }
+                      ]
+                    },
+                    "Cognome": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 60
+                          }
+                        }
+                      ]
+                    },
+                    "Titolo": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 2
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 10
+                          }
+                        }
+                      ]
+                    },
+                    "CodEORI": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 13
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 17
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "CessionarioCommittente": {
+          "type": "object",
+          "tests": [
+            {
+              "name": "required"
+            }
+          ],
+          "fields": {
+            "DatiAnagrafici": {
+              "type": "object",
+              "tests": [
+                {
+                  "name": "required"
+                }
+              ],
+              "fields": {
+                "IdFiscaleIVA": {
+                  "type": "mixed",
+                  "tests": []
+                },
+                "CodiceFiscale": {
+                  "type": "mixed",
+                  "tests": []
+                },
+                "Anagrafica": {
+                  "type": "object",
+                  "tests": [
+                    {
+                      "name": "required"
+                    }
+                  ],
+                  "fields": {
+                    "Denominazione": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 80
+                          }
+                        }
+                      ]
+                    },
+                    "Nome": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 60
+                          }
+                        }
+                      ]
+                    },
+                    "Cognome": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 60
+                          }
+                        }
+                      ]
+                    },
+                    "Titolo": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 2
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 10
+                          }
+                        }
+                      ]
+                    },
+                    "CodEORI": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 13
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 17
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            "Sede": {
+              "type": "object",
+              "tests": [
+                {
+                  "name": "required"
+                }
+              ],
+              "fields": {
+                "Indirizzo": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 1
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 60
+                      }
+                    },
+                    {
+                      "name": "required"
+                    }
+                  ]
+                },
+                "NumeroCivico": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 1
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 8
+                      }
+                    }
+                  ]
+                },
+                "CAP": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "matches",
+                      "params": {
+                        "regex": {}
+                      }
+                    },
+                    {
+                      "name": "required"
+                    }
+                  ]
+                },
+                "Comune": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 1
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 60
+                      }
+                    },
+                    {
+                      "name": "required"
+                    }
+                  ]
+                },
+                "Provincia": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "string_case"
+                    },
+                    {
+                      "name": "length",
+                      "params": {
+                        "length": 2
+                      }
+                    }
+                  ]
+                },
+                "Nazione": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "string_case"
+                    },
+                    {
+                      "name": "length",
+                      "params": {
+                        "length": 2
+                      }
+                    },
+                    {
+                      "name": "required"
+                    }
+                  ]
+                }
+              }
+            },
+            "StabileOrganizzazione": {
+              "type": "object",
+              "tests": [],
+              "fields": {}
+            },
+            "RappresentanteFiscale": {
+              "type": "object",
+              "tests": [],
+              "fields": {
+                "IdFiscaleIVA": {
+                  "type": "object",
+                  "tests": [],
+                  "fields": {
+                    "IdPaese": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "required"
+                        }
+                      ],
+                      "oneOf": [
+                        "AD",
+                        "AE",
+                        "AF",
+                        "AG",
+                        "AI",
+                        "AL",
+                        "AM",
+                        "AO",
+                        "AQ",
+                        "AR",
+                        "AS",
+                        "AT",
+                        "AU",
+                        "AW",
+                        "AX",
+                        "AZ",
+                        "BA",
+                        "BB",
+                        "BD",
+                        "BE",
+                        "BF",
+                        "BG",
+                        "BH",
+                        "BI",
+                        "BJ",
+                        "BL",
+                        "BM",
+                        "BN",
+                        "BO",
+                        "BQ",
+                        "BR",
+                        "BS",
+                        "BT",
+                        "BV",
+                        "BW",
+                        "BY",
+                        "BZ",
+                        "CA",
+                        "CC",
+                        "CD",
+                        "CF",
+                        "CG",
+                        "CH",
+                        "CI",
+                        "CK",
+                        "CL",
+                        "CM",
+                        "CN",
+                        "CO",
+                        "CR",
+                        "CU",
+                        "CV",
+                        "CW",
+                        "CX",
+                        "CY",
+                        "CZ",
+                        "DE",
+                        "DJ",
+                        "DK",
+                        "DM",
+                        "DO",
+                        "DZ",
+                        "EC",
+                        "EE",
+                        "EG",
+                        "EH",
+                        "ER",
+                        "ES",
+                        "ET",
+                        "FI",
+                        "FJ",
+                        "FK",
+                        "FM",
+                        "FO",
+                        "FR",
+                        "GA",
+                        "GB",
+                        "GD",
+                        "GE",
+                        "GF",
+                        "GG",
+                        "GH",
+                        "GI",
+                        "GL",
+                        "GM",
+                        "GN",
+                        "GP",
+                        "GQ",
+                        "GR",
+                        "GS",
+                        "GT",
+                        "GU",
+                        "GW",
+                        "GY",
+                        "HK",
+                        "HM",
+                        "HN",
+                        "HR",
+                        "HT",
+                        "HU",
+                        "ID",
+                        "IE",
+                        "IL",
+                        "IM",
+                        "IN",
+                        "IO",
+                        "IQ",
+                        "IR",
+                        "IS",
+                        "IT",
+                        "JE",
+                        "JM",
+                        "JO",
+                        "JP",
+                        "KE",
+                        "KG",
+                        "KH",
+                        "KI",
+                        "KM",
+                        "KN",
+                        "KP",
+                        "KR",
+                        "KW",
+                        "KY",
+                        "KZ",
+                        "LA",
+                        "LB",
+                        "LC",
+                        "LI",
+                        "LK",
+                        "LR",
+                        "LS",
+                        "LT",
+                        "LU",
+                        "LV",
+                        "LY",
+                        "MA",
+                        "MC",
+                        "MD",
+                        "ME",
+                        "MF",
+                        "MG",
+                        "MH",
+                        "MK",
+                        "ML",
+                        "MM",
+                        "MN",
+                        "MO",
+                        "MP",
+                        "MQ",
+                        "MR",
+                        "MS",
+                        "MT",
+                        "MU",
+                        "MV",
+                        "MW",
+                        "MX",
+                        "MY",
+                        "MZ",
+                        "NA",
+                        "NC",
+                        "NE",
+                        "NF",
+                        "NG",
+                        "NI",
+                        "NL",
+                        "NO",
+                        "NP",
+                        "NR",
+                        "NU",
+                        "NZ",
+                        "OM",
+                        "PA",
+                        "PE",
+                        "PF",
+                        "PG",
+                        "PH",
+                        "PK",
+                        "PL",
+                        "PM",
+                        "PN",
+                        "PR",
+                        "PS",
+                        "PT",
+                        "PW",
+                        "PY",
+                        "QA",
+                        "RE",
+                        "RO",
+                        "RS",
+                        "RU",
+                        "RW",
+                        "SA",
+                        "SB",
+                        "SC",
+                        "SD",
+                        "SE",
+                        "SG",
+                        "SH",
+                        "SI",
+                        "SJ",
+                        "SK",
+                        "SL",
+                        "SM",
+                        "SN",
+                        "SO",
+                        "SR",
+                        "SS",
+                        "ST",
+                        "SV",
+                        "SX",
+                        "SY",
+                        "SZ",
+                        "TC",
+                        "TD",
+                        "TF",
+                        "TG",
+                        "TH",
+                        "TJ",
+                        "TK",
+                        "TL",
+                        "TM",
+                        "TN",
+                        "TO",
+                        "TR",
+                        "TT",
+                        "TV",
+                        "TW",
+                        "TZ",
+                        "UA",
+                        "UG",
+                        "UM",
+                        "US",
+                        "UY",
+                        "UZ",
+                        "VA",
+                        "VC",
+                        "VE",
+                        "VG",
+                        "VI",
+                        "VN",
+                        "VU",
+                        "WF",
+                        "WS",
+                        "YE",
+                        "YT",
+                        "ZA",
+                        "ZM",
+                        "ZW"
+                      ]
+                    },
+                    "IdCodice": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 2
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 28
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    }
+                  }
+                },
+                "Denominazione": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 1
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 80
+                      }
+                    }
+                  ]
+                },
+                "Nome": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 1
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 60
+                      }
+                    }
+                  ]
+                },
+                "Cognome": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "min",
+                      "params": {
+                        "min": 1
+                      }
+                    },
+                    {
+                      "name": "max",
+                      "params": {
+                        "max": 60
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "TerzoIntermediarioOSoggettoEmittente": {
+          "type": "object",
+          "tests": [],
+          "fields": {
+            "DatiAnagrafici": {
+              "type": "object",
+              "tests": [
+                {
+                  "name": "required"
+                }
+              ],
+              "fields": {
+                "IdFiscaleIVA": {
+                  "type": "object",
+                  "tests": [],
+                  "fields": {
+                    "IdPaese": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "required"
+                        }
+                      ],
+                      "oneOf": [
+                        "AD",
+                        "AE",
+                        "AF",
+                        "AG",
+                        "AI",
+                        "AL",
+                        "AM",
+                        "AO",
+                        "AQ",
+                        "AR",
+                        "AS",
+                        "AT",
+                        "AU",
+                        "AW",
+                        "AX",
+                        "AZ",
+                        "BA",
+                        "BB",
+                        "BD",
+                        "BE",
+                        "BF",
+                        "BG",
+                        "BH",
+                        "BI",
+                        "BJ",
+                        "BL",
+                        "BM",
+                        "BN",
+                        "BO",
+                        "BQ",
+                        "BR",
+                        "BS",
+                        "BT",
+                        "BV",
+                        "BW",
+                        "BY",
+                        "BZ",
+                        "CA",
+                        "CC",
+                        "CD",
+                        "CF",
+                        "CG",
+                        "CH",
+                        "CI",
+                        "CK",
+                        "CL",
+                        "CM",
+                        "CN",
+                        "CO",
+                        "CR",
+                        "CU",
+                        "CV",
+                        "CW",
+                        "CX",
+                        "CY",
+                        "CZ",
+                        "DE",
+                        "DJ",
+                        "DK",
+                        "DM",
+                        "DO",
+                        "DZ",
+                        "EC",
+                        "EE",
+                        "EG",
+                        "EH",
+                        "ER",
+                        "ES",
+                        "ET",
+                        "FI",
+                        "FJ",
+                        "FK",
+                        "FM",
+                        "FO",
+                        "FR",
+                        "GA",
+                        "GB",
+                        "GD",
+                        "GE",
+                        "GF",
+                        "GG",
+                        "GH",
+                        "GI",
+                        "GL",
+                        "GM",
+                        "GN",
+                        "GP",
+                        "GQ",
+                        "GR",
+                        "GS",
+                        "GT",
+                        "GU",
+                        "GW",
+                        "GY",
+                        "HK",
+                        "HM",
+                        "HN",
+                        "HR",
+                        "HT",
+                        "HU",
+                        "ID",
+                        "IE",
+                        "IL",
+                        "IM",
+                        "IN",
+                        "IO",
+                        "IQ",
+                        "IR",
+                        "IS",
+                        "IT",
+                        "JE",
+                        "JM",
+                        "JO",
+                        "JP",
+                        "KE",
+                        "KG",
+                        "KH",
+                        "KI",
+                        "KM",
+                        "KN",
+                        "KP",
+                        "KR",
+                        "KW",
+                        "KY",
+                        "KZ",
+                        "LA",
+                        "LB",
+                        "LC",
+                        "LI",
+                        "LK",
+                        "LR",
+                        "LS",
+                        "LT",
+                        "LU",
+                        "LV",
+                        "LY",
+                        "MA",
+                        "MC",
+                        "MD",
+                        "ME",
+                        "MF",
+                        "MG",
+                        "MH",
+                        "MK",
+                        "ML",
+                        "MM",
+                        "MN",
+                        "MO",
+                        "MP",
+                        "MQ",
+                        "MR",
+                        "MS",
+                        "MT",
+                        "MU",
+                        "MV",
+                        "MW",
+                        "MX",
+                        "MY",
+                        "MZ",
+                        "NA",
+                        "NC",
+                        "NE",
+                        "NF",
+                        "NG",
+                        "NI",
+                        "NL",
+                        "NO",
+                        "NP",
+                        "NR",
+                        "NU",
+                        "NZ",
+                        "OM",
+                        "PA",
+                        "PE",
+                        "PF",
+                        "PG",
+                        "PH",
+                        "PK",
+                        "PL",
+                        "PM",
+                        "PN",
+                        "PR",
+                        "PS",
+                        "PT",
+                        "PW",
+                        "PY",
+                        "QA",
+                        "RE",
+                        "RO",
+                        "RS",
+                        "RU",
+                        "RW",
+                        "SA",
+                        "SB",
+                        "SC",
+                        "SD",
+                        "SE",
+                        "SG",
+                        "SH",
+                        "SI",
+                        "SJ",
+                        "SK",
+                        "SL",
+                        "SM",
+                        "SN",
+                        "SO",
+                        "SR",
+                        "SS",
+                        "ST",
+                        "SV",
+                        "SX",
+                        "SY",
+                        "SZ",
+                        "TC",
+                        "TD",
+                        "TF",
+                        "TG",
+                        "TH",
+                        "TJ",
+                        "TK",
+                        "TL",
+                        "TM",
+                        "TN",
+                        "TO",
+                        "TR",
+                        "TT",
+                        "TV",
+                        "TW",
+                        "TZ",
+                        "UA",
+                        "UG",
+                        "UM",
+                        "US",
+                        "UY",
+                        "UZ",
+                        "VA",
+                        "VC",
+                        "VE",
+                        "VG",
+                        "VI",
+                        "VN",
+                        "VU",
+                        "WF",
+                        "WS",
+                        "YE",
+                        "YT",
+                        "ZA",
+                        "ZM",
+                        "ZW"
+                      ]
+                    },
+                    "IdCodice": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 2
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 28
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    }
+                  }
+                },
+                "CodiceFiscale": {
+                  "type": "string",
+                  "tests": [
+                    {
+                      "name": "matches",
+                      "params": {
+                        "regex": {}
+                      }
+                    }
+                  ]
+                },
+                "Anagrafica": {
+                  "type": "object",
+                  "tests": [
+                    {
+                      "name": "required"
+                    }
+                  ],
+                  "fields": {
+                    "Denominazione": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 80
+                          }
+                        }
+                      ]
+                    },
+                    "Nome": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 60
+                          }
+                        }
+                      ]
+                    },
+                    "Cognome": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 60
+                          }
+                        }
+                      ]
+                    },
+                    "Titolo": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 2
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 10
+                          }
+                        }
+                      ]
+                    },
+                    "CodEORI": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 13
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 17
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "SoggettoEmittente": {
+          "type": "string",
+          "tests": [],
+          "oneOf": ["CC", "TZ"]
+        }
+      }
+    },
+    "FatturaElettronicaBody": {
+      "type": "array",
+      "tests": [
+        {
+          "name": "required"
+        }
+      ],
+      "innerType": {
+        "type": "object",
+        "tests": [],
+        "fields": {
+          "DatiGenerali": {
+            "type": "object",
+            "tests": [
+              {
+                "name": "required"
+              }
+            ],
+            "fields": {
+              "DatiGeneraliDocumento": {
+                "type": "object",
+                "tests": [
+                  {
+                    "name": "required"
+                  }
+                ],
+                "fields": {
+                  "TipoDocumento": {
+                    "type": "string",
+                    "tests": [
+                      {
+                        "name": "required"
+                      }
+                    ],
+                    "oneOf": ["TD01", "TD02", "TD03", "TD04", "TD05", "TD06"]
+                  },
+                  "Divisa": {
+                    "type": "string",
+                    "tests": [
+                      {
+                        "name": "required"
+                      }
+                    ],
+                    "oneOf": [
+                      "AED",
+                      "AFN",
+                      "ALL",
+                      "AMD",
+                      "ANG",
+                      "AOA",
+                      "ARS",
+                      "AUD",
+                      "AWG",
+                      "AZN",
+                      "BAM",
+                      "BBD",
+                      "BDT",
+                      "BGN",
+                      "BHD",
+                      "BIF",
+                      "BMD",
+                      "BND",
+                      "BOB",
+                      "BRL",
+                      "BSD",
+                      "BTN",
+                      "BWP",
+                      "BYN",
+                      "BZD",
+                      "CAD",
+                      "CDF",
+                      "CHF",
+                      "CLP",
+                      "CNY",
+                      "COP",
+                      "CRC",
+                      "CUC",
+                      "CUP",
+                      "CVE",
+                      "CZK",
+                      "DJF",
+                      "DKK",
+                      "DOP",
+                      "DZD",
+                      "EGP",
+                      "ERN",
+                      "ETB",
+                      "EUR",
+                      "FJD",
+                      "FKP",
+                      "GBP",
+                      "GEL",
+                      "GGP",
+                      "GHS",
+                      "GIP",
+                      "GMD",
+                      "GNF",
+                      "GTQ",
+                      "GYD",
+                      "HKD",
+                      "HNL",
+                      "HRK",
+                      "HTG",
+                      "HUF",
+                      "IDR",
+                      "ILS",
+                      "IMP",
+                      "INR",
+                      "IQD",
+                      "IRR",
+                      "ISK",
+                      "JEP",
+                      "JMD",
+                      "JOD",
+                      "JPY",
+                      "KES",
+                      "KGS",
+                      "KHR",
+                      "KMF",
+                      "KPW",
+                      "KRW",
+                      "KWD",
+                      "KYD",
+                      "KZT",
+                      "LAK",
+                      "LBP",
+                      "LKR",
+                      "LRD",
+                      "LSL",
+                      "LYD",
+                      "MAD",
+                      "MDL",
+                      "MGA",
+                      "MKD",
+                      "MMK",
+                      "MNT",
+                      "MOP",
+                      "MRU",
+                      "MUR",
+                      "MVR",
+                      "MWK",
+                      "MXN",
+                      "MYR",
+                      "MZN",
+                      "NAD",
+                      "NGN",
+                      "NIO",
+                      "NOK",
+                      "NPR",
+                      "NZD",
+                      "OMR",
+                      "PAB",
+                      "PEN",
+                      "PGK",
+                      "PHP",
+                      "PKR",
+                      "PLN",
+                      "PYG",
+                      "QAR",
+                      "RON",
+                      "RSD",
+                      "RUB",
+                      "RWF",
+                      "SAR",
+                      "SBD",
+                      "SCR",
+                      "SDG",
+                      "SEK",
+                      "SGD",
+                      "SHP",
+                      "SLL",
+                      "SOS",
+                      "SPL",
+                      "SRD",
+                      "STN",
+                      "SVC",
+                      "SYP",
+                      "SZL",
+                      "THB",
+                      "TJS",
+                      "TMT",
+                      "TND",
+                      "TOP",
+                      "TRY",
+                      "TTD",
+                      "TVD",
+                      "TWD",
+                      "TZS",
+                      "UAH",
+                      "UGX",
+                      "USD",
+                      "UYU",
+                      "UZS",
+                      "VEF",
+                      "VND",
+                      "VUV",
+                      "WST",
+                      "XAF",
+                      "XCD",
+                      "XDR",
+                      "XOF",
+                      "XPF",
+                      "YER",
+                      "ZAR",
+                      "ZMW",
+                      "ZWD"
+                    ]
+                  },
+                  "Data": {
+                    "type": "date",
+                    "tests": [
+                      {
+                        "name": "required"
+                      }
+                    ]
+                  },
+                  "Numero": {
+                    "type": "string",
+                    "tests": [
+                      {
+                        "name": "max",
+                        "params": {
+                          "max": 20
+                        }
+                      },
+                      {
+                        "name": "required"
+                      }
+                    ]
+                  },
+                  "DatiRitenuta": {
+                    "type": "object",
+                    "tests": [],
+                    "fields": {
+                      "TipoRitenuta": {
+                        "type": "string",
+                        "tests": [
+                          {
+                            "name": "required"
+                          }
+                        ],
+                        "oneOf": ["RT01", "RT02"]
+                      },
+                      "ImportoRitenuta": {
+                        "type": "string",
+                        "tests": [
+                          {
+                            "name": "matches",
+                            "params": {
+                              "regex": {}
+                            }
+                          },
+                          {
+                            "name": "required"
+                          }
+                        ]
+                      },
+                      "AliquotaRitenuta": {
+                        "type": "string",
+                        "tests": [
+                          {
+                            "name": "matches",
+                            "params": {
+                              "regex": {}
+                            }
+                          },
+                          {
+                            "name": "required"
+                          }
+                        ]
+                      },
+                      "CausalePagamento": {
+                        "type": "string",
+                        "tests": [
+                          {
+                            "name": "min",
+                            "params": {
+                              "min": 1
+                            }
+                          },
+                          {
+                            "name": "max",
+                            "params": {
+                              "max": 2
+                            }
+                          },
+                          {
+                            "name": "required"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "DatiBollo": {
+                    "type": "object",
+                    "tests": [],
+                    "fields": {
+                      "BolloVirtuale": {
+                        "type": "string",
+                        "tests": [
+                          {
+                            "name": "required"
+                          }
+                        ],
+                        "oneOf": ["SI"]
+                      },
+                      "ImportoBollo": {
+                        "type": "string",
+                        "tests": [
+                          {
+                            "name": "matches",
+                            "params": {
+                              "regex": {}
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "DatiCassaPrevidenziale": {
+                    "type": "array",
+                    "tests": [],
+                    "innerType": {
+                      "type": "object",
+                      "tests": [],
+                      "fields": {
+                        "TipoCassa": {
+                          "type": "string",
+                          "tests": [
+                            {
+                              "name": "required"
+                            }
+                          ],
+                          "oneOf": [
+                            "TC01",
+                            "TC02",
+                            "TC03",
+                            "TC04",
+                            "TC05",
+                            "TC06",
+                            "TC07",
+                            "TC08",
+                            "TC09",
+                            "TC10",
+                            "TC11",
+                            "TC12",
+                            "TC13",
+                            "TC14",
+                            "TC15",
+                            "TC16",
+                            "TC17",
+                            "TC18",
+                            "TC19",
+                            "TC20",
+                            "TC21",
+                            "TC22"
+                          ]
+                        },
+                        "AlCassa": {
+                          "type": "string",
+                          "tests": [
+                            {
+                              "name": "matches",
+                              "params": {
+                                "regex": {}
+                              }
+                            },
+                            {
+                              "name": "required"
+                            }
+                          ]
+                        },
+                        "ImportoContributoCassa": {
+                          "type": "string",
+                          "tests": [
+                            {
+                              "name": "matches",
+                              "params": {
+                                "regex": {}
+                              }
+                            },
+                            {
+                              "name": "required"
+                            }
+                          ]
+                        },
+                        "ImponibileCassa": {
+                          "type": "string",
+                          "tests": [
+                            {
+                              "name": "matches",
+                              "params": {
+                                "regex": {}
+                              }
+                            }
+                          ]
+                        },
+                        "AliquotaIVA": {
+                          "type": "string",
+                          "tests": [
+                            {
+                              "name": "matches",
+                              "params": {
+                                "regex": {}
+                              }
+                            },
+                            {
+                              "name": "required"
+                            }
+                          ]
+                        },
+                        "Ritenuta": {
+                          "type": "string",
+                          "tests": [],
+                          "oneOf": ["SI"]
+                        },
+                        "Natura": {
+                          "type": "string",
+                          "tests": [],
+                          "oneOf": ["N1", "N2", "N3", "N4", "N5", "N6", "N7"]
+                        },
+                        "RiferimentoAmministrazione": {
+                          "type": "string",
+                          "tests": [
+                            {
+                              "name": "min",
+                              "params": {
+                                "min": 1
+                              }
+                            },
+                            {
+                              "name": "max",
+                              "params": {
+                                "max": 20
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "ScontoMaggiorazione": {
+                    "type": "array",
+                    "tests": [],
+                    "innerType": {
+                      "type": "object",
+                      "tests": [],
+                      "fields": {
+                        "Tipo": {
+                          "type": "string",
+                          "tests": [
+                            {
+                              "name": "required"
+                            }
+                          ],
+                          "oneOf": ["SC", "MG"]
+                        },
+                        "Percentuale": {
+                          "type": "string",
+                          "tests": [
+                            {
+                              "name": "matches",
+                              "params": {
+                                "regex": {}
+                              }
+                            }
+                          ]
+                        },
+                        "Importo": {
+                          "type": "string",
+                          "tests": [
+                            {
+                              "name": "matches",
+                              "params": {
+                                "regex": {}
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  },
+                  "ImportoTotaleDocumento": {
+                    "type": "string",
+                    "tests": [
+                      {
+                        "name": "matches",
+                        "params": {
+                          "regex": {}
+                        }
+                      }
+                    ]
+                  },
+                  "Arrotondamento": {
+                    "type": "string",
+                    "tests": [
+                      {
+                        "name": "matches",
+                        "params": {
+                          "regex": {}
+                        }
+                      }
+                    ]
+                  },
+                  "Causale": {
+                    "type": "array",
+                    "tests": [],
+                    "innerType": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 200
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "Art73": {
+                    "type": "string",
+                    "tests": [],
+                    "oneOf": ["SI"]
+                  }
+                }
+              },
+              "DatiOrdineAcquisto": {
+                "type": "array",
+                "tests": [],
+                "innerType": {
+                  "type": "object",
+                  "tests": [],
+                  "fields": {
+                    "RiferimentoNumeroLinea": {
+                      "type": "array",
+                      "tests": [],
+                      "innerType": {
+                        "type": "number",
+                        "tests": [
+                          {
+                            "name": "min",
+                            "params": {
+                              "min": 1
+                            }
+                          },
+                          {
+                            "name": "max",
+                            "params": {
+                              "max": 9999
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "IdDocumento": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 20
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    },
+                    "Data": {
+                      "type": "date",
+                      "tests": []
+                    },
+                    "NumItem": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 20
+                          }
+                        }
+                      ]
+                    },
+                    "CodiceCommessaConvenzione": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 100
+                          }
+                        }
+                      ]
+                    },
+                    "CodiceCUP": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 15
+                          }
+                        }
+                      ]
+                    },
+                    "CodiceCIG": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 15
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "DatiContratto": {
+                "type": "array",
+                "tests": [],
+                "innerType": {
+                  "type": "object",
+                  "tests": [],
+                  "fields": {
+                    "RiferimentoNumeroLinea": {
+                      "type": "array",
+                      "tests": [],
+                      "innerType": {
+                        "type": "number",
+                        "tests": [
+                          {
+                            "name": "min",
+                            "params": {
+                              "min": 1
+                            }
+                          },
+                          {
+                            "name": "max",
+                            "params": {
+                              "max": 9999
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "IdDocumento": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 20
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    },
+                    "Data": {
+                      "type": "date",
+                      "tests": []
+                    },
+                    "NumItem": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 20
+                          }
+                        }
+                      ]
+                    },
+                    "CodiceCommessaConvenzione": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 100
+                          }
+                        }
+                      ]
+                    },
+                    "CodiceCUP": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 15
+                          }
+                        }
+                      ]
+                    },
+                    "CodiceCIG": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 15
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "DatiConvenzione": {
+                "type": "array",
+                "tests": [],
+                "innerType": {
+                  "type": "object",
+                  "tests": [],
+                  "fields": {
+                    "RiferimentoNumeroLinea": {
+                      "type": "array",
+                      "tests": [],
+                      "innerType": {
+                        "type": "number",
+                        "tests": [
+                          {
+                            "name": "min",
+                            "params": {
+                              "min": 1
+                            }
+                          },
+                          {
+                            "name": "max",
+                            "params": {
+                              "max": 9999
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "IdDocumento": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 20
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    },
+                    "Data": {
+                      "type": "date",
+                      "tests": []
+                    },
+                    "NumItem": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 20
+                          }
+                        }
+                      ]
+                    },
+                    "CodiceCommessaConvenzione": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 100
+                          }
+                        }
+                      ]
+                    },
+                    "CodiceCUP": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 15
+                          }
+                        }
+                      ]
+                    },
+                    "CodiceCIG": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 15
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "DatiRicezione": {
+                "type": "array",
+                "tests": [],
+                "innerType": {
+                  "type": "object",
+                  "tests": [],
+                  "fields": {
+                    "RiferimentoNumeroLinea": {
+                      "type": "array",
+                      "tests": [],
+                      "innerType": {
+                        "type": "number",
+                        "tests": [
+                          {
+                            "name": "min",
+                            "params": {
+                              "min": 1
+                            }
+                          },
+                          {
+                            "name": "max",
+                            "params": {
+                              "max": 9999
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "IdDocumento": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 20
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    },
+                    "Data": {
+                      "type": "date",
+                      "tests": []
+                    },
+                    "NumItem": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 20
+                          }
+                        }
+                      ]
+                    },
+                    "CodiceCommessaConvenzione": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 100
+                          }
+                        }
+                      ]
+                    },
+                    "CodiceCUP": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 15
+                          }
+                        }
+                      ]
+                    },
+                    "CodiceCIG": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 15
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "DatiFattureCollegate": {
+                "type": "array",
+                "tests": [],
+                "innerType": {
+                  "type": "object",
+                  "tests": [],
+                  "fields": {
+                    "RiferimentoNumeroLinea": {
+                      "type": "array",
+                      "tests": [],
+                      "innerType": {
+                        "type": "number",
+                        "tests": [
+                          {
+                            "name": "min",
+                            "params": {
+                              "min": 1
+                            }
+                          },
+                          {
+                            "name": "max",
+                            "params": {
+                              "max": 9999
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    "IdDocumento": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 20
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    },
+                    "Data": {
+                      "type": "date",
+                      "tests": []
+                    },
+                    "NumItem": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 20
+                          }
+                        }
+                      ]
+                    },
+                    "CodiceCommessaConvenzione": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 100
+                          }
+                        }
+                      ]
+                    },
+                    "CodiceCUP": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 15
+                          }
+                        }
+                      ]
+                    },
+                    "CodiceCIG": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 15
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "DatiSAL": {
+                "type": "array",
+                "tests": [],
+                "innerType": {
+                  "type": "object",
+                  "tests": [],
+                  "fields": {
+                    "RiferimentoFase": {
+                      "type": "number",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 999
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    }
+                  }
+                }
+              },
+              "DatiDDT": {
+                "type": "array",
+                "tests": [],
+                "innerType": {
+                  "type": "object",
+                  "tests": [],
+                  "fields": {
+                    "NumeroDDT": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 20
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    },
+                    "DataDDT": {
+                      "type": "date",
+                      "tests": [
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    },
+                    "RiferimentoNumeroLinea": {
+                      "type": "array",
+                      "tests": [],
+                      "innerType": {
+                        "type": "number",
+                        "tests": [
+                          {
+                            "name": "min",
+                            "params": {
+                              "min": 1
+                            }
+                          },
+                          {
+                            "name": "max",
+                            "params": {
+                              "max": 9999
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "DatiTrasporto": {
+                "type": "object",
+                "tests": [],
+                "fields": {
+                  "DatiAnagraficiVettore": {
+                    "type": "object",
+                    "tests": [],
+                    "fields": {
+                      "IdFiscaleIVA": {
+                        "type": "object",
+                        "tests": [
+                          {
+                            "name": "required"
+                          }
+                        ],
+                        "fields": {
+                          "IdPaese": {
+                            "type": "string",
+                            "tests": [
+                              {
+                                "name": "required"
+                              }
+                            ],
+                            "oneOf": [
+                              "AD",
+                              "AE",
+                              "AF",
+                              "AG",
+                              "AI",
+                              "AL",
+                              "AM",
+                              "AO",
+                              "AQ",
+                              "AR",
+                              "AS",
+                              "AT",
+                              "AU",
+                              "AW",
+                              "AX",
+                              "AZ",
+                              "BA",
+                              "BB",
+                              "BD",
+                              "BE",
+                              "BF",
+                              "BG",
+                              "BH",
+                              "BI",
+                              "BJ",
+                              "BL",
+                              "BM",
+                              "BN",
+                              "BO",
+                              "BQ",
+                              "BR",
+                              "BS",
+                              "BT",
+                              "BV",
+                              "BW",
+                              "BY",
+                              "BZ",
+                              "CA",
+                              "CC",
+                              "CD",
+                              "CF",
+                              "CG",
+                              "CH",
+                              "CI",
+                              "CK",
+                              "CL",
+                              "CM",
+                              "CN",
+                              "CO",
+                              "CR",
+                              "CU",
+                              "CV",
+                              "CW",
+                              "CX",
+                              "CY",
+                              "CZ",
+                              "DE",
+                              "DJ",
+                              "DK",
+                              "DM",
+                              "DO",
+                              "DZ",
+                              "EC",
+                              "EE",
+                              "EG",
+                              "EH",
+                              "ER",
+                              "ES",
+                              "ET",
+                              "FI",
+                              "FJ",
+                              "FK",
+                              "FM",
+                              "FO",
+                              "FR",
+                              "GA",
+                              "GB",
+                              "GD",
+                              "GE",
+                              "GF",
+                              "GG",
+                              "GH",
+                              "GI",
+                              "GL",
+                              "GM",
+                              "GN",
+                              "GP",
+                              "GQ",
+                              "GR",
+                              "GS",
+                              "GT",
+                              "GU",
+                              "GW",
+                              "GY",
+                              "HK",
+                              "HM",
+                              "HN",
+                              "HR",
+                              "HT",
+                              "HU",
+                              "ID",
+                              "IE",
+                              "IL",
+                              "IM",
+                              "IN",
+                              "IO",
+                              "IQ",
+                              "IR",
+                              "IS",
+                              "IT",
+                              "JE",
+                              "JM",
+                              "JO",
+                              "JP",
+                              "KE",
+                              "KG",
+                              "KH",
+                              "KI",
+                              "KM",
+                              "KN",
+                              "KP",
+                              "KR",
+                              "KW",
+                              "KY",
+                              "KZ",
+                              "LA",
+                              "LB",
+                              "LC",
+                              "LI",
+                              "LK",
+                              "LR",
+                              "LS",
+                              "LT",
+                              "LU",
+                              "LV",
+                              "LY",
+                              "MA",
+                              "MC",
+                              "MD",
+                              "ME",
+                              "MF",
+                              "MG",
+                              "MH",
+                              "MK",
+                              "ML",
+                              "MM",
+                              "MN",
+                              "MO",
+                              "MP",
+                              "MQ",
+                              "MR",
+                              "MS",
+                              "MT",
+                              "MU",
+                              "MV",
+                              "MW",
+                              "MX",
+                              "MY",
+                              "MZ",
+                              "NA",
+                              "NC",
+                              "NE",
+                              "NF",
+                              "NG",
+                              "NI",
+                              "NL",
+                              "NO",
+                              "NP",
+                              "NR",
+                              "NU",
+                              "NZ",
+                              "OM",
+                              "PA",
+                              "PE",
+                              "PF",
+                              "PG",
+                              "PH",
+                              "PK",
+                              "PL",
+                              "PM",
+                              "PN",
+                              "PR",
+                              "PS",
+                              "PT",
+                              "PW",
+                              "PY",
+                              "QA",
+                              "RE",
+                              "RO",
+                              "RS",
+                              "RU",
+                              "RW",
+                              "SA",
+                              "SB",
+                              "SC",
+                              "SD",
+                              "SE",
+                              "SG",
+                              "SH",
+                              "SI",
+                              "SJ",
+                              "SK",
+                              "SL",
+                              "SM",
+                              "SN",
+                              "SO",
+                              "SR",
+                              "SS",
+                              "ST",
+                              "SV",
+                              "SX",
+                              "SY",
+                              "SZ",
+                              "TC",
+                              "TD",
+                              "TF",
+                              "TG",
+                              "TH",
+                              "TJ",
+                              "TK",
+                              "TL",
+                              "TM",
+                              "TN",
+                              "TO",
+                              "TR",
+                              "TT",
+                              "TV",
+                              "TW",
+                              "TZ",
+                              "UA",
+                              "UG",
+                              "UM",
+                              "US",
+                              "UY",
+                              "UZ",
+                              "VA",
+                              "VC",
+                              "VE",
+                              "VG",
+                              "VI",
+                              "VN",
+                              "VU",
+                              "WF",
+                              "WS",
+                              "YE",
+                              "YT",
+                              "ZA",
+                              "ZM",
+                              "ZW"
+                            ]
+                          },
+                          "IdCodice": {
+                            "type": "string",
+                            "tests": [
+                              {
+                                "name": "min",
+                                "params": {
+                                  "min": 2
+                                }
+                              },
+                              {
+                                "name": "max",
+                                "params": {
+                                  "max": 28
+                                }
+                              },
+                              {
+                                "name": "required"
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "CodiceFiscale": {
+                        "type": "string",
+                        "tests": [
+                          {
+                            "name": "min",
+                            "params": {
+                              "min": 11
+                            }
+                          },
+                          {
+                            "name": "max",
+                            "params": {
+                              "max": 16
+                            }
+                          }
+                        ]
+                      },
+                      "Anagrafica": {
+                        "type": "object",
+                        "tests": [
+                          {
+                            "name": "required"
+                          }
+                        ],
+                        "fields": {
+                          "Denominazione": {
+                            "type": "string",
+                            "tests": [
+                              {
+                                "name": "min",
+                                "params": {
+                                  "min": 1
+                                }
+                              },
+                              {
+                                "name": "max",
+                                "params": {
+                                  "max": 80
+                                }
+                              }
+                            ]
+                          },
+                          "Nome": {
+                            "type": "string",
+                            "tests": [
+                              {
+                                "name": "min",
+                                "params": {
+                                  "min": 1
+                                }
+                              },
+                              {
+                                "name": "max",
+                                "params": {
+                                  "max": 60
+                                }
+                              }
+                            ]
+                          },
+                          "Cognome": {
+                            "type": "string",
+                            "tests": [
+                              {
+                                "name": "min",
+                                "params": {
+                                  "min": 1
+                                }
+                              },
+                              {
+                                "name": "max",
+                                "params": {
+                                  "max": 60
+                                }
+                              }
+                            ]
+                          },
+                          "Titolo": {
+                            "type": "string",
+                            "tests": [
+                              {
+                                "name": "min",
+                                "params": {
+                                  "min": 2
+                                }
+                              },
+                              {
+                                "name": "max",
+                                "params": {
+                                  "max": 10
+                                }
+                              }
+                            ]
+                          },
+                          "CodEORI": {
+                            "type": "string",
+                            "tests": [
+                              {
+                                "name": "min",
+                                "params": {
+                                  "min": 13
+                                }
+                              },
+                              {
+                                "name": "max",
+                                "params": {
+                                  "max": 17
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "NumeroLicenzaGuida": {
+                        "type": "string",
+                        "tests": [
+                          {
+                            "name": "min",
+                            "params": {
+                              "min": 1
+                            }
+                          },
+                          {
+                            "name": "max",
+                            "params": {
+                              "max": 20
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "MezzoTrasporto": {
+                    "type": "string",
+                    "tests": [
+                      {
+                        "name": "min",
+                        "params": {
+                          "min": 1
+                        }
+                      },
+                      {
+                        "name": "max",
+                        "params": {
+                          "max": 80
+                        }
+                      }
+                    ]
+                  },
+                  "CausaleTrasporto": {
+                    "type": "string",
+                    "tests": [
+                      {
+                        "name": "min",
+                        "params": {
+                          "min": 1
+                        }
+                      },
+                      {
+                        "name": "max",
+                        "params": {
+                          "max": 100
+                        }
+                      }
+                    ]
+                  },
+                  "NumeroColli": {
+                    "type": "number",
+                    "tests": [
+                      {
+                        "name": "integer"
+                      },
+                      {
+                        "name": "min",
+                        "params": {
+                          "min": 1
+                        }
+                      },
+                      {
+                        "name": "max",
+                        "params": {
+                          "max": 9999
+                        }
+                      }
+                    ]
+                  },
+                  "Descrizione": {
+                    "type": "string",
+                    "tests": [
+                      {
+                        "name": "min",
+                        "params": {
+                          "min": 1
+                        }
+                      },
+                      {
+                        "name": "max",
+                        "params": {
+                          "max": 100
+                        }
+                      }
+                    ]
+                  },
+                  "UnitaMisuraPeso": {
+                    "type": "string",
+                    "tests": [
+                      {
+                        "name": "min",
+                        "params": {
+                          "min": 1
+                        }
+                      },
+                      {
+                        "name": "max",
+                        "params": {
+                          "max": 10
+                        }
+                      }
+                    ]
+                  },
+                  "PesoLordo": {
+                    "type": "string",
+                    "tests": [
+                      {
+                        "name": "matches",
+                        "params": {
+                          "regex": {}
+                        }
+                      }
+                    ]
+                  },
+                  "PesoNetto": {
+                    "type": "string",
+                    "tests": [
+                      {
+                        "name": "matches",
+                        "params": {
+                          "regex": {}
+                        }
+                      }
+                    ]
+                  },
+                  "DataOraRitiro": {
+                    "type": "date",
+                    "tests": []
+                  },
+                  "DataInizioTrasporto": {
+                    "type": "date",
+                    "tests": []
+                  },
+                  "TipoResa": {
+                    "type": "string",
+                    "tests": [
+                      {
+                        "name": "length",
+                        "params": {
+                          "length": 3
+                        }
+                      }
+                    ]
+                  },
+                  "IndirizzoResa": {
+                    "type": "object",
+                    "tests": [],
+                    "fields": {
+                      "Indirizzo": {
+                        "type": "string",
+                        "tests": [
+                          {
+                            "name": "min",
+                            "params": {
+                              "min": 1
+                            }
+                          },
+                          {
+                            "name": "max",
+                            "params": {
+                              "max": 60
+                            }
+                          },
+                          {
+                            "name": "required"
+                          }
+                        ]
+                      },
+                      "NumeroCivico": {
+                        "type": "string",
+                        "tests": [
+                          {
+                            "name": "min",
+                            "params": {
+                              "min": 1
+                            }
+                          },
+                          {
+                            "name": "max",
+                            "params": {
+                              "max": 8
+                            }
+                          }
+                        ]
+                      },
+                      "CAP": {
+                        "type": "string",
+                        "tests": [
+                          {
+                            "name": "matches",
+                            "params": {
+                              "regex": {}
+                            }
+                          },
+                          {
+                            "name": "required"
+                          }
+                        ]
+                      },
+                      "Comune": {
+                        "type": "string",
+                        "tests": [
+                          {
+                            "name": "min",
+                            "params": {
+                              "min": 1
+                            }
+                          },
+                          {
+                            "name": "max",
+                            "params": {
+                              "max": 60
+                            }
+                          },
+                          {
+                            "name": "required"
+                          }
+                        ]
+                      },
+                      "Provincia": {
+                        "type": "string",
+                        "tests": [
+                          {
+                            "name": "string_case"
+                          },
+                          {
+                            "name": "length",
+                            "params": {
+                              "length": 2
+                            }
+                          }
+                        ]
+                      },
+                      "Nazione": {
+                        "type": "string",
+                        "tests": [
+                          {
+                            "name": "string_case"
+                          },
+                          {
+                            "name": "length",
+                            "params": {
+                              "length": 2
+                            }
+                          },
+                          {
+                            "name": "required"
+                          }
+                        ]
+                      }
+                    }
+                  },
+                  "DataOraConsegna": {
+                    "type": "date",
+                    "tests": []
+                  }
+                }
+              },
+              "FatturaPrincipale": {
+                "type": "object",
+                "tests": [],
+                "fields": {
+                  "NumeroFatturaPrincipale": {
+                    "type": "string",
+                    "tests": [
+                      {
+                        "name": "min",
+                        "params": {
+                          "min": 1
+                        }
+                      },
+                      {
+                        "name": "max",
+                        "params": {
+                          "max": 20
+                        }
+                      },
+                      {
+                        "name": "required"
+                      }
+                    ]
+                  },
+                  "DataFatturaPrincipale": {
+                    "type": "date",
+                    "tests": [
+                      {
+                        "name": "required"
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "DatiBeniServizi": {
+            "type": "object",
+            "tests": [
+              {
+                "name": "required"
+              }
+            ],
+            "fields": {
+              "DettaglioLinee": {
+                "type": "array",
+                "tests": [
+                  {
+                    "name": "required"
+                  }
+                ],
+                "innerType": {
+                  "type": "object",
+                  "tests": [],
+                  "fields": {
+                    "NumeroLinea": {
+                      "type": "number",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 0
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 9999
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    },
+                    "TipoCessionePrestazione": {
+                      "type": "string",
+                      "tests": [],
+                      "oneOf": ["SC", "PR", "AB", "AC"]
+                    },
+                    "CodiceArticolo": {
+                      "type": "array",
+                      "tests": [],
+                      "innerType": {
+                        "type": "object",
+                        "tests": [],
+                        "fields": {
+                          "CodiceTipo": {
+                            "type": "string",
+                            "tests": [
+                              {
+                                "name": "min",
+                                "params": {
+                                  "min": 1
+                                }
+                              },
+                              {
+                                "name": "max",
+                                "params": {
+                                  "max": 35
+                                }
+                              },
+                              {
+                                "name": "required"
+                              }
+                            ]
+                          },
+                          "CodiceValore": {
+                            "type": "string",
+                            "tests": [
+                              {
+                                "name": "min",
+                                "params": {
+                                  "min": 1
+                                }
+                              },
+                              {
+                                "name": "max",
+                                "params": {
+                                  "max": 35
+                                }
+                              },
+                              {
+                                "name": "required"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    "Descrizione": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 1000
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    },
+                    "Quantita": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "matches",
+                          "params": {
+                            "regex": {}
+                          }
+                        }
+                      ]
+                    },
+                    "UnitaMisura": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 10
+                          }
+                        }
+                      ]
+                    },
+                    "DataInizioPeriodo": {
+                      "type": "date",
+                      "tests": []
+                    },
+                    "DataFinePeriodo": {
+                      "type": "date",
+                      "tests": []
+                    },
+                    "PrezzoUnitario": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "matches",
+                          "params": {
+                            "regex": {}
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    },
+                    "ScontoMaggiorazione": {
+                      "type": "array",
+                      "tests": [],
+                      "innerType": {
+                        "type": "object",
+                        "tests": [],
+                        "fields": {
+                          "Tipo": {
+                            "type": "string",
+                            "tests": [
+                              {
+                                "name": "required"
+                              }
+                            ],
+                            "oneOf": ["SC", "MG"]
+                          },
+                          "Percentuale": {
+                            "type": "string",
+                            "tests": [
+                              {
+                                "name": "matches",
+                                "params": {
+                                  "regex": {}
+                                }
+                              }
+                            ]
+                          },
+                          "Importo": {
+                            "type": "string",
+                            "tests": [
+                              {
+                                "name": "matches",
+                                "params": {
+                                  "regex": {}
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    },
+                    "PrezzoTotale": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "matches",
+                          "params": {
+                            "regex": {}
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    },
+                    "AliquotaIVA": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "matches",
+                          "params": {
+                            "regex": {}
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    },
+                    "Ritenuta": {
+                      "type": "string",
+                      "tests": [],
+                      "oneOf": ["SI"]
+                    },
+                    "Natura": {
+                      "type": "string",
+                      "tests": [],
+                      "oneOf": ["N1", "N2", "N3", "N4", "N5", "N6", "N7"]
+                    },
+                    "RiferimentoAmministrazione": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 20
+                          }
+                        }
+                      ]
+                    },
+                    "AltriDatiGestionali": {
+                      "type": "array",
+                      "tests": [],
+                      "innerType": {
+                        "type": "object",
+                        "tests": [],
+                        "fields": {
+                          "TipoDato": {
+                            "type": "string",
+                            "tests": [
+                              {
+                                "name": "min",
+                                "params": {
+                                  "min": 1
+                                }
+                              },
+                              {
+                                "name": "max",
+                                "params": {
+                                  "max": 10
+                                }
+                              },
+                              {
+                                "name": "required"
+                              }
+                            ]
+                          },
+                          "RiferimentoTesto": {
+                            "type": "string",
+                            "tests": [
+                              {
+                                "name": "min",
+                                "params": {
+                                  "min": 1
+                                }
+                              },
+                              {
+                                "name": "max",
+                                "params": {
+                                  "max": 60
+                                }
+                              }
+                            ]
+                          },
+                          "RiferimentoNumero": {
+                            "type": "string",
+                            "tests": [
+                              {
+                                "name": "matches",
+                                "params": {
+                                  "regex": {}
+                                }
+                              }
+                            ]
+                          },
+                          "RiferimentoData": {
+                            "type": "date",
+                            "tests": []
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              },
+              "DatiRiepilogo": {
+                "type": "array",
+                "tests": [
+                  {
+                    "name": "required"
+                  }
+                ],
+                "innerType": {
+                  "type": "object",
+                  "tests": [],
+                  "fields": {
+                    "Natura": {
+                      "type": "string",
+                      "tests": [],
+                      "oneOf": ["N1", "N2", "N3", "N4", "N5", "N6", "N7"]
+                    },
+                    "SpeseAccessorie": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "matches",
+                          "params": {
+                            "regex": {}
+                          }
+                        }
+                      ]
+                    },
+                    "Arrotondamento": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "matches",
+                          "params": {
+                            "regex": {}
+                          }
+                        }
+                      ]
+                    },
+                    "ImponibileImporto": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "matches",
+                          "params": {
+                            "regex": {}
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    },
+                    "Imposta": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "matches",
+                          "params": {
+                            "regex": {}
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    },
+                    "EsigibilitaIVA": {
+                      "type": "string",
+                      "tests": [],
+                      "oneOf": ["I", "D", "S"]
+                    },
+                    "RiferimentoNormativo": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 100
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "DatiVeicoli": {
+            "type": "object",
+            "tests": [],
+            "fields": {
+              "Data": {
+                "type": "date",
+                "tests": []
+              },
+              "TotalePercorso": {
+                "type": "string",
+                "tests": [
+                  {
+                    "name": "min",
+                    "params": {
+                      "min": 1
+                    }
+                  },
+                  {
+                    "name": "max",
+                    "params": {
+                      "max": 15
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "DatiPagamento": {
+            "type": "object",
+            "tests": [],
+            "fields": {
+              "CondizioniPagamento": {
+                "type": "string",
+                "tests": [
+                  {
+                    "name": "required"
+                  }
+                ],
+                "oneOf": ["TP01", "TP02", "TP03"]
+              },
+              "DettaglioPagamento": {
+                "type": "array",
+                "tests": [
+                  {
+                    "name": "required"
+                  }
+                ],
+                "innerType": {
+                  "type": "object",
+                  "tests": [],
+                  "fields": {
+                    "Beneficiario": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 200
+                          }
+                        }
+                      ]
+                    },
+                    "ModalitaPagamento": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "required"
+                        }
+                      ],
+                      "oneOf": [
+                        "MP01",
+                        "MP02",
+                        "MP03",
+                        "MP04",
+                        "MP05",
+                        "MP06",
+                        "MP07",
+                        "MP08",
+                        "MP09",
+                        "MP10",
+                        "MP11",
+                        "MP12",
+                        "MP13",
+                        "MP14",
+                        "MP15",
+                        "MP16",
+                        "MP17",
+                        "MP18",
+                        "MP19",
+                        "MP20",
+                        "MP21",
+                        "MP22"
+                      ]
+                    },
+                    "DataRiferimentoTerminiPagamento": {
+                      "type": "date",
+                      "tests": []
+                    },
+                    "GiorniTerminiPagamento": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 3
+                          }
+                        }
+                      ]
+                    },
+                    "DataScadenzaPagamento": {
+                      "type": "date",
+                      "tests": []
+                    },
+                    "ImportoPagamento": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "matches",
+                          "params": {
+                            "regex": {}
+                          }
+                        },
+                        {
+                          "name": "required"
+                        }
+                      ]
+                    },
+                    "CodUfficioPostale": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 20
+                          }
+                        }
+                      ]
+                    },
+                    "CognomeQuietanzante": {
+                      "type": "string",
+                      "tests": []
+                    },
+                    "NomeQuietanzante": {
+                      "type": "string",
+                      "tests": []
+                    },
+                    "CFQuietanzante": {
+                      "type": "mixed",
+                      "tests": []
+                    },
+                    "TitoloQuietanzante": {
+                      "type": "mixed",
+                      "tests": []
+                    },
+                    "IstitutoFinanziario": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 80
+                          }
+                        }
+                      ]
+                    },
+                    "IBAN": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "matches",
+                          "params": {
+                            "regex": {}
+                          }
+                        }
+                      ]
+                    },
+                    "ABI": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "matches",
+                          "params": {
+                            "regex": {}
+                          }
+                        },
+                        {
+                          "name": "length",
+                          "params": {
+                            "length": 5
+                          }
+                        }
+                      ]
+                    },
+                    "CAB": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "matches",
+                          "params": {
+                            "regex": {}
+                          }
+                        },
+                        {
+                          "name": "length",
+                          "params": {
+                            "length": 5
+                          }
+                        }
+                      ]
+                    },
+                    "BIC": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 8
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 11
+                          }
+                        }
+                      ]
+                    },
+                    "ScontoPagamentoAnticipato": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "matches",
+                          "params": {
+                            "regex": {}
+                          }
+                        }
+                      ]
+                    },
+                    "DataLimitePagamentoAnticipato": {
+                      "type": "date",
+                      "tests": []
+                    },
+                    "PenalitaPagamentiRitardati": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "matches",
+                          "params": {
+                            "regex": {}
+                          }
+                        }
+                      ]
+                    },
+                    "DataDecorrenzaPenale": {
+                      "type": "date",
+                      "tests": []
+                    },
+                    "CodicePagamento": {
+                      "type": "string",
+                      "tests": [
+                        {
+                          "name": "min",
+                          "params": {
+                            "min": 1
+                          }
+                        },
+                        {
+                          "name": "max",
+                          "params": {
+                            "max": 60
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "Allegati": {
+            "type": "object",
+            "tests": [],
+            "fields": {
+              "NomeAttachment": {
+                "type": "string",
+                "tests": [
+                  {
+                    "name": "min",
+                    "params": {
+                      "min": 1
+                    }
+                  },
+                  {
+                    "name": "max",
+                    "params": {
+                      "max": 60
+                    }
+                  },
+                  {
+                    "name": "required"
+                  }
+                ]
+              },
+              "AlgoritmoCompressione": {
+                "type": "string",
+                "tests": [
+                  {
+                    "name": "min",
+                    "params": {
+                      "min": 1
+                    }
+                  },
+                  {
+                    "name": "max",
+                    "params": {
+                      "max": 10
+                    }
+                  }
+                ]
+              },
+              "FormatoAttachment": {
+                "type": "string",
+                "tests": [
+                  {
+                    "name": "min",
+                    "params": {
+                      "min": 1
+                    }
+                  },
+                  {
+                    "name": "max",
+                    "params": {
+                      "max": 10
+                    }
+                  }
+                ]
+              },
+              "Attachment": {
+                "type": "string",
+                "tests": [
+                  {
+                    "name": "required"
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
