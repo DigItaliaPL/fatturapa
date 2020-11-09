@@ -45,7 +45,7 @@ fpa2whatever(data, { validate: false });
 #### XML to JS Object
 
 ```js
-import { fpa2js } from "@digitalia/fatturapa";
+import { fpa2js } from '@digitalia/fatturapa';
 
 let xmlData = `
   <?xml version="1.0" encoding="UTF-8"?>
@@ -61,13 +61,13 @@ let xmlData = `
 
 let invoice = fpa2js(xmlData, { validate: false, valuesOnly: false });
 
-console.log("Invoice :", invoice);
+console.log('Invoice :', invoice);
 ```
 
 #### JSON to XML
 
 ```js
-import { fpa2xml } from "@digitalia/fatturapa";
+import { fpa2xml } from '@digitalia/fatturapa';
 
 let jsonData = `
   {
@@ -81,7 +81,7 @@ let jsonData = `
 
 let invoice = fpa2xml(jsonData);
 
-console.log("Invoice :", invoice);
+console.log('Invoice :', invoice);
 ```
 
 ### Validation
@@ -98,11 +98,11 @@ Il modulo esporta anche l'oggetto `FPAYupSchema` contenente lo schema [yup](http
 import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
-import { FatturaPASchema } from '@digitalia/fatturapa';
+import { FPAYupSchema } from '@digitalia/fatturapa';
 
 const ClientSideForm = () => {
   return (
-    <Formik initalValues={{...}} validationSchema={FatturaPASchema}>
+    <Formik initalValues={{...}} validationSchema={FPAYupSchema}>
       {({errors, touched}) => (
         <Form>
           ....
@@ -120,7 +120,7 @@ const ClientSideForm = () => {
 ###### Example in Node/JS
 
 ```js
-import {fpaValidate, FatturaPASchema} from '@digitalia/fatturapa'
+import {fpaValidate, FPAYupSchema} from '@digitalia/fatturapa'
 
 let invoice = {
   FatturaElettronica: {
@@ -130,19 +130,17 @@ let invoice = {
   }
 }
 
-let isValid = fpaValidate(invoice)
-// If you want to use your own yup schema
-let isValid = fpaValidate(invoice, yourYupSchema)
+let isValid = fpaValidate(invoice, FPAYupSchema)
 ```
 
 #### XML Validation
 
-To validate an XML file, you must convert it to a JS object via the fpa2js() function mentioned above.
+To validate an XML file, you must convert it to a JS object via the `fpa2js()` function above mentioned.
 
-Per validare un file XML, è necessario convertirlo in un oggetto JS tramite la funzione fpa2js() menzionata sopra.
+Per validare un file XML, è necessario prima convertirlo in un oggetto JS tramite la funzione `fpa2js()` menzionata sopra.
 
 ```js
-import { fpa2js, fpaValidate, FatturaPASchema } from "@digitalia/fatturapa";
+import { fpa2js, fpaValidate, FatturaPASchema } from '@digitalia/fatturapa';
 
 let xmlData = `
   <?xml version="1.0" encoding="UTF-8"?>
@@ -156,7 +154,7 @@ let xmlData = `
   </p:FatturaElettronica>
 `;
 
-let isValid = fpaValidate(fpa2js(xmlData));
+let isValid = fpaValidate(fpa2js(xmlData), FPAYupSchema);
 ```
 
 ## Credits
