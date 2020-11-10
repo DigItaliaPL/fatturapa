@@ -68,6 +68,13 @@
     "type": "git",
     "url": "https://github.com/DigItaliaPL/fatturapa.git"
   },
+  "keywords": [
+    "FatturaPA",
+    "Javascript",
+    "FatturaElettronica",
+    "TypeScript",
+    "Electronic Invoice"
+  ],
   "bugs": {
     "url": "https://github.com/DigItaliaPL/fatturapa/issues"
   }
